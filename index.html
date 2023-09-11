@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трудоустройство</title>
+
+    <link rel="stylesheet" href="css/recruitment-styles.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/recruitment-styles-main.css">
+    <link rel="stylesheet" href="css/recruitment-home.css">
+
+
+
+    <!-- CSS: recruitment-home, recruitment-styles, bootstrap, recruitment-styles-main -->
+</head>
+<body>
+
+<style>
+    ul {
+        list-style-image: url("img/svg/list-marker.svg");
+    }
+</style>
+
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="header-top">
+                <div class="pnu-name">
+                    <a href="https://pnu.edu.ru/ru/">
+                        <img alt="pnu-logo" src="img/svg/logo.svg"/>
+                        <span>
+                            ТИХООКЕАНСКИЙ <br>ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ
+                        </span>
+                    </a>
+                </div>
+
+                <div class="login">
+                    <a class="login-link" href="">
+                        <table><tr>
+                            <td>
+                                <img src="img/UserOutline.png"></img>
+                            </td>
+                            <td>
+                                Личный кабинет
+                            </td>
+                        </tr></table>
+                    </a>
+                </div>
+            </div>
+            <div class="header-title">
+                <h1>Трудоустройство</h1>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<nav class="menu">
+    <div class="container">
+        <div class="nav-menu" id="nav-list">
+            <div class="mobile-top">
+                <div class="mobile-title">Главная</div>
+                <div class="mobile-icon" onclick="OpenMenu()">
+                    <!--<i class="fa fa-bars"></i>-->
+                    <div class="mobile-bar"></div>
+                    <div class="mobile-bar"></div>
+                    <div class="mobile-bar"></div>
+                </div>
+            </div>
+
+            <script>
+                function OpenMenu() {
+                    var x = document.getElementById("nav-list");
+                    if (x.className === "nav-menu") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "nav-menu";
+                    }
+                }
+            </script>
+
+            <ul class="nav-menu-list">
+                <a href="" class="menu-link"><li class="menu-item">Главная</li></a>
+                <a href="" class="menu-link"><li class="menu-item menu-login">Личный кабинет</li></a>
+                <a href="" class="menu-link"><li class="menu-item">Поиск резюме</li></a>
+                <a href="" class="menu-link"><li class="menu-item">База вакансий</li></a>
+                <a href="" class="menu-link"><li class="menu-item">Анкета работодателя</li></a>
+                <a href="" class="menu-link"><li class="menu-item">Анкета выпускника</li></a>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<main class="body">
+    <div class="container">
+        <div class="head-w-img">
+            <div class="head--text">
+                <h3>Трудоустройство студентов</h3>
+                <p><strong>Центр профессионального развития и сопровождения карьеры (ЦПРСК) Тихоокеанского государственного
+                    университета</strong> – связующее звено в экосистеме кадрового партнёрства «работодатель и регион –
+                    университет – студенты и выпускники». <br>
+                    Миссия ЦПРСК – повышение конкурентоспособности выпускников университета через профориентацию и карьерную
+                    поддержку, содействие развитию профессиональных компетенций студентов в консолидации с организациями-партнерам,
+                    обучение эффективному поведению на рынке труда.</p>
+                <p>Направления деятельности Центра профессионального развития и сопровождения карьеры:</p>
+                <ul>
+                    <li>участие в выработке стратегии университета в области профессионального развития, содействия
+                        трудоустройству и сопровождения карьеры студентов и выпускников</li>
+                    <li>взаимодействие с внутренними партнёрами (институты и факультеты, высшие школы и выпускающие
+                        кафедры, структурные подразделения университета), проектная и экспертная деятельность</li>
+                    <li>постоянное взаимодействие с внешними партнёрами – организациями-работодателями, государственными
+                        структурами и общественными организациями, чья миссия – содействие профессиональной реализации
+                        студентов и выпускников, а также вузами-партнёрами</li>
+                    <li>разработка информационно-методических материалов по тематике центра карьеры</li>
+                    <li>организация и проведение активных форм индивидуальной и групповой работы с обучающимися в очном
+                        и онлайн форматах (консультации, мастер-классы, тренинги, презентации работодателей и студентов,
+                        ярмарки вакансий)</li>
+                    <li>формирование баз данных вакансий, резюме студентов и выпускников</li>
+                    <li>проведение опросов, анкетирования, мониторинга трудоустройства и других исследований, аналитика
+                        и прогнозирование</li>
+                </ul>
+            </div>
+            <div class="head--img">
+                <img src="img/top-fg.png">
+            </div>
+        </div>
+        <div class="head-bottom-txt">
+
+        </div>
+
+        <hr>
+    </div>
+
+</main>
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner row">
+            <div class="col-lg-1 col-md-3 social">
+                <a href="" target="_blank">
+                    <img src="img/pnu.png" alt="ТОГУ">
+                </a>
+                <a href="" target="_blank">
+                    <img src="img/vk.png" alt="ТОГУ">
+                </a>
+                <a href="" target="_blank">
+                    <img src="img/tg.png" alt="ТОГУ">
+                </a>
+                <a href="" target="_blank">
+                    <img src="img/rutube.png" alt="ТОГУ">
+                </a>
+            </div>
+            <span class="col-lg-10 col-md-9 contacts">
+                    8 (4212) 76-17-25
+                    <br>
+                    +7 (914) 414-33-79 (WhatsApp)
+                    <br>
+                    start-k@pnu.edu.ru
+                </span>
+            <img class="col-lg-1 hidden-sm" alt="pnu-logo" src="img/svg/logo.svg"/>
+        </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>

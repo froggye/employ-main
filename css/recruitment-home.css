@@ -1,0 +1,236 @@
+/* === ТЕКСТ ВЕРХНИЙ === */
+
+.head-w-img {
+    display: flex;
+
+    background-image: url("../img/top-bg.png");
+    background-size: 42%;
+    background-repeat: no-repeat;
+    background-position: top right, center;
+}
+
+.head--text {
+    flex: 1 1 70%;
+}
+
+.head--img img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .head-w-img {
+        flex-direction: column;
+
+        background-position: center 220%;
+        background-size: 60%;
+    }
+
+    .head--text {
+        flex: 1 1 100%;
+    }
+
+    .head--img img {
+        width: 65%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 0 0;
+
+        margin-right: auto;
+        /*clip-path: inset(0% 0% 62% 0%);*/
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .head-w-img {
+        background-position: center 140%;
+        background-size: 63%;
+    }
+
+    .head--img img {
+        width: 85%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 0 0;
+
+        margin-right: auto;
+        /*clip-path: inset(0% 0% 62% 0%);*/
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .head-w-img {
+        background-position: bottom 200%;
+        background-size: 100%;
+    }
+
+    .head--img img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 0 -10%;
+
+        margin-right: auto;
+        /*clip-path: inset(0% 0% 62% 0%);*/
+    }
+
+}
+
+
+
+
+/* STUDENT */
+
+.side-img {
+    width: 65%;
+    /*margin: 0 auto;*/
+    margin: auto;
+}
+
+.side-img img {
+    width: 100%;
+    /*height: 100%;
+    object-fit: cover;*/
+}
+
+@media screen and (max-width: 1100px) {
+    .side-img {
+        margin: 16px auto 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .side-img {
+        width: 80%;
+    }
+
+}
+
+/*  CARDS  */
+
+.cards {
+    display: inline-block;
+}
+
+.cards-list{
+    display: inline-block;
+    width: 100%;
+}
+
+.card{
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.card-body{
+    width: 100%;
+    display: flex;
+    gap: 32px;
+}
+/*
+.card-title{
+    margin: 0 0 16px 0;
+}*/
+
+.card-image{
+    max-width: 285px;
+}
+
+.card-text{
+    flex-grow: 1;
+    min-width: 0;
+    display: inline-block;
+}
+
+/* RESOURCES */
+
+.res-links {
+    margin: auto;
+    text-align: center;
+}
+
+.res-links a {
+    margin: 0 40px;
+}
+
+@media screen and (max-width: 1100px) {
+    .res-links a {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    /*.res-links a img {
+        transform: scale(80%);
+    }*/
+
+    .res-links a {
+        margin: 0 16px;
+    }
+
+}
+
+/*  SOCIAL  */
+
+/*.social-links{
+    height: 50px;
+}
+
+.social-btn img{
+    height: 100%;
+    transition: 0.2s;
+}
+
+.social-btn img:hover{
+    transform: scale(1.1);
+}*/
+
+/*  SCREEN SIZE  */
+
+@media screen and (max-width: 1100px) {
+    .greet-slideshow{
+        padding: 0;
+        margin: auto;
+    }
+    .greet{
+        flex-direction: column;
+    }
+
+    .card-body{
+        display: inline-block;
+    }
+
+    .card-image {
+        display: flex;
+        margin: auto;
+    }
+
+    .card-image img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    /*.social-links {
+        text-align: center;
+    }*/
+
+    .card {
+        padding: 16px;
+    }
+
+    /*.res-links .social-btn img {
+        height: 80px;
+        width: 80px;
+    }*/
+
+}
