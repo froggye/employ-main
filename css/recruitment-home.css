@@ -104,73 +104,96 @@
     margin: auto 0 auto 8px;
 }
 
+/* Ярмарка */
 
-/* STUDENT */
-
-.side-img {
-    width: 65%;
-    /*margin: 0 auto;*/
-    margin: auto;
+.yarmarka {
+    display: flex;
 }
 
-.side-img img {
+.yarmarka--text {
+    flex: 1 1 70%;
+    margin-right: 20px;
+}
+
+.yarmarka--img-wrapper{
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.yarmarka--img-wrapper img {
     width: 100%;
-    /*height: 100%;
-    object-fit: cover;*/
+    transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 1100px) {
-    .side-img {
-        margin: 16px auto 0 auto;
+.yarmarka--img a:hover img {
+    object-fit: cover;
+    transform: scale(105%);
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .yarmarka {
+        flex-direction: column;
+    }
+
+    .yarmarka--img-wrapper{
+        max-width: 500px;
+        margin: 0 auto;
     }
 
 }
 
-@media screen and (max-width: 780px) {
-    .side-img {
-        width: 80%;
-    }
 
-}
+/* === СОТРУДНИЧЕСТВО CARDS ===  */
 
-/*  CARDS  */
-
-.cards {
-    display: inline-block;
-}
-
-.cards-list{
-    display: inline-block;
-    width: 100%;
-}
 
 .card{
     background-color: #F0F0F0;
     border-radius: 8px;
-    padding: 32px;
-    margin-bottom: 32px;
+    padding: 20px;
+    margin-bottom: 20px;
     width: 100%;
 }
 
-.card-body{
+.card--body{
     width: 100%;
     display: flex;
-    gap: 32px;
 }
+
 /*
 .card-title{
     margin: 0 0 16px 0;
 }*/
 
-.card-image{
+.card--image{
     max-width: 285px;
 }
 
-.card-text{
+.card--text{
     flex-grow: 1;
     min-width: 0;
     display: inline-block;
+    margin-left: 20px;
 }
+
+@media screen and (max-width: 1100px) {
+    .card--body{
+        flex-direction: column;
+    }
+
+    .card--image {
+        display: flex;
+        margin: 0 auto 8px auto;
+    }
+
+    .card--image img{
+        width: 100%;
+    }
+
+}
+
+
 
 /* RESOURCES */
 
@@ -200,59 +223,3 @@
 
 }
 
-/*  SOCIAL  */
-
-/*.social-links{
-    height: 50px;
-}
-
-.social-btn img{
-    height: 100%;
-    transition: 0.2s;
-}
-
-.social-btn img:hover{
-    transform: scale(1.1);
-}*/
-
-/*  SCREEN SIZE  */
-
-@media screen and (max-width: 1100px) {
-    .greet-slideshow{
-        padding: 0;
-        margin: auto;
-    }
-    .greet{
-        flex-direction: column;
-    }
-
-    .card-body{
-        display: inline-block;
-    }
-
-    .card-image {
-        display: flex;
-        margin: auto;
-    }
-
-    .card-image img{
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 780px) {
-    /*.social-links {
-        text-align: center;
-    }*/
-
-    .card {
-        padding: 16px;
-    }
-
-    /*.res-links .social-btn img {
-        height: 80px;
-        width: 80px;
-    }*/
-
-}
